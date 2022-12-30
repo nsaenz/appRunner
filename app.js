@@ -12,8 +12,8 @@ app.use(cors());
 //routes to verify that the secrets were retrieved successfully.
 app.get("/", (req, res) => {
 	return res.status(200).json({
-		SECRET_1: process.env.SECRET_1,
-		SECRET_2: process.env.SECRET_2,
+		SECRET_1: process.env.username,
+		SECRET_2: process.env.password,
 	});
 });
 
